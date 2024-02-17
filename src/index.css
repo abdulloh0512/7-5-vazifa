@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.active {
+  position: relative;
+}
+.active::before {
+  content: "";
+  width: 100%;
+  position: absolute;
+  height: 2px;
+  background-color: rgb(35, 35, 255);
+  bottom: -3px;
+  border-radius: 1px;
+}
